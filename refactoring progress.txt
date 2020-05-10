@@ -1,0 +1,45 @@
+21.10.2015
+addDocForm - в процессе(»льичев) 
+
+SelectForm - done (Chalenko)
+InputForm - done (Chalenko)
+StatusSelectForm - in process (Chalenko)
+DepartamentSelectForm - to do (Chalenko)
+DocChangeSelectForm - to do (Chalenko)
+PrivacySelectForm - to do (Chalenko)
+DeveloperSelectForm - to do (Chalenko)
+
+EditDocForm - под вопросом
+
+22.10.2015
+StatusSelectForm - done (Chalenko)
+PrivacySelectForm - done (Chalenko)
+DepartamentSelectForm - done (Chalenko)
+SelectForm - done (Chalenko)
+InputForm -> AddForm (Chalenko)
+add EditForm (Chalenko)
+DeveloperSelectForm - done (Chalenko)
+SelectForm - done (Ilichev)
+EditForm - do0ne (Ilichev)
+DepartamentSelectForm-> DepartmentSelectForm (Chalenko)
+DepartmentSelectForm - done (Chalenko)
+add AddDepartmentForm (Chalenko)
+AddDepartamentForm - to do (Ilichev)
+ZamenaSelectForm -> SubstitutionSelectForm
+SubstitutionSelectForm - done(Chalenko)
+SelectForm - done (Ilichev)
+merge SelectForm - done (Chalenko, Ilichev)
+DataBaseContext - partly(Ilichev)
+EditForm - done (Ilichev)
+
+DocToPodrForm - to do (Chalenko)
+
+23,10,2015
+stored procedure kart_add - done(Ilichev)
+stored procedure kart_edit - done(Ilichev)
+описание программы добавил намек на таблицу Department - done(Ilichev)
+очистка от лишних таблиц(нужных таблиц - 13 штук) (Ilichev)
+заблочил кнопки замена/заменен на editDocForm до нажатия Редактировать (Ilichev)
+
+24,10,2015
+stored procedure ListDocsIntoPlant - in process + см Query9

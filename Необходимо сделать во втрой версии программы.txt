@@ -1,0 +1,11 @@
+1. SystemUser class (Example in OpzdPlanRen);
+2. RepairInfo subproject (Example in OpzdPlanRen);
+3. DataGridViewPrinter class
+4. XML reader and loader in DatabaseContext for reading multi-level tree structures (Example in Materials prices); No-no-no-no!!!
+5. Filter class (Example in OpzdPlanRen);
+6. Обернуть DatabaseContext в универсальный DataAccess класс;
+7. Возможно стоит использовать NHibernate;
+8. Возможно стоит использовать NLog;
+9. OperationCanceledException is exist!!
+10. Создание класса под каждую сущность;
+11. Абстрактный класс-форма GridForm (Example in ПЛАН новая версия);

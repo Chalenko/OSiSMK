@@ -1,0 +1,29 @@
+DocChange
+	docID - docId
+	Number - number
+
+DocStatus 
+	Stat - status
+	
+DocType
+	DocType - docType
+	
+DocVvodInfo
+	docId - docId
+	codPodr - podrId
+	
+Kart 
+	docId - id
+	Vzamen - vzamen
+	Zamenen - zamenen
+	
+PodrDoc                    
+	docid - docId
+	codPodr - podrId -- varchar!!!
+	
+PoluchatelInfo 
+	docID - docId
+	pouchData - poluchDate
+	
+ZaprosInfo 
+	docID - docId

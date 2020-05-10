@@ -1,0 +1,39 @@
+27.11.2015
++ добавлено поле original в таблице Kart(€льичев) 
+* изменения в EditDocToDepartmentForm.LoadData() - поправлено обращение к таблце(€льичев)
++ добавлено поле dateEndOfAction в таблице Kart(€льичев)
+	todo: надо ли экспортировать original и dateEndOfAction в ворд? НАДА СДЕЛАНА
+	todo: мб стоит переименовать в карточке поля docStatus docSecret docDeveloper на названия с суффиксом id? НЕ НАДА НЕ СДЕЛАНА
+* stored procedure SelectPodrDocInfoForPrintCard  - rt.copyReturnedCount[Количество копий сдано] -> rt.copyReturnedCount[Количество копий списано]
+* exporterKartToWORD printData(Convert.ToInt32(dataRow["Количество копий сдано"])); -> printData(Convert.ToInt32(dataRow["Количество копий списано"]));
+* storprod SelectPodrDocStatisticForPrint - ,copyReturnedCount"Количество экземпляров в наличии" ->	,copyReturnedCount"Количество списанных экземпляров"
+* reportPodrDocForm - replaceNullByZeroCountCopyInStockInStatistic 
+* storprod DocPodr_select - ,t.takedate AS [Дата возврата]  -> ,t.takedate AS [Дата списания]  
+* SelectLastDocPodr - ,Convert(varchar(10), #t.takedate, 104) AS [Дата возврата]  -> ,Convert(varchar(10), #t.takedate, 104) AS [Дата списания] 
+
+* в reportPodrDocForm ждут "списан" или +"списан по акту"? ЧПВ
+* docForm лбл"Количество сданных копий" ЧПВ
+* docForm все dictionary достаются через order by
+* docToDepartmentForm + order by + перенастройка cmbs нa datasource
+* editDocToDepartmentForm
+* fileLogger - сбрасывается место сохранения -> теперь берётся всегда адрес запуска exe
+	todo: сбрасывается дата возврата в докТуПодр
+
+* в докФорм добавлены поля для original и dateEndOfAction ЧПВ
+* добавлена обработка полей дат для сохранения и редактирования ЧПВ
+	
+30,11,2015
+!merge
+* todo: сбрасывается дата возврата в докТуПодр done ЧПВ
+
+1.12.2015
+* todo : суммировать списан и списан по акту
+* exporterCardToWord поправлена бага с выводом экземпляров ЧПВ
+* экспорт original, controlCopy и dateEndOfAction ЧПВ
+
+3.12.15
+? дата сортировки в GetInnerDocListSinceTo и GetOuterDocListSinceTo
+
+3,4,7.12.15
+* куча багов ЧПВ
+	todo: описание бд
